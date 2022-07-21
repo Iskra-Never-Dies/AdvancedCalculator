@@ -15,7 +15,7 @@ unsafe
     TypedReference tr2 = __makeref(number2);
     a.inputnumber(tr2);
 
-    if (a.calculate(out string test) == true)
+    if (a.plus(out string test) == true)
     {
         TypedReference tr3 = __makeref(test);
         int* ret = a.getvalue(tr3);

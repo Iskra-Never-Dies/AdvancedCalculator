@@ -23,7 +23,7 @@ namespace Calculator
             }
         }
 
-        public unsafe bool calculate(out string xd)
+        public unsafe bool plus(out string xd)
         {
             xd = "";
             int number1 = numberlist.Pop();
@@ -36,6 +36,167 @@ namespace Calculator
             {
                 reshltstring.Add(Hashing.generateshastring(__arglist(number1 + number2)), number1 + number2);
                 xd = Hashing.generateshastring(__arglist(number1 + number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool minus(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 - number2)), number1 - number2);
+                xd = Hashing.generateshastring(__arglist(number1 - number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool multiply(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 * number2)), number1 * number2);
+                xd = Hashing.generateshastring(__arglist(number1 * number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool divide(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 / number2)), number1 / number2);
+                xd = Hashing.generateshastring(__arglist(number1 / number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool mod(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 % number2)), number1 % number2);
+                xd = Hashing.generateshastring(__arglist(number1 % number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+
+        public unsafe bool shl(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 << number2)), number1 << number2);
+                xd = Hashing.generateshastring(__arglist(number1 << number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool shr(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 >> number2)), number1 >> number2);
+                xd = Hashing.generateshastring(__arglist(number1 >> number2));
+                return true;
+            }
+            else if (false)
+            {
+                return false;
+            }
+
+            return false;
+        }
+        
+        public unsafe bool bitmask(out string xd)
+        {
+            xd = "";
+            int number1 = numberlist.Pop();
+            int number2 = numberlist.Pop();
+
+            string stringhash1 = stirnghashed.Pop();
+            string stringhash2 = stirnghashed.Pop();
+
+            if(Hashing.generateshastring(__arglist(number1)) is var umber1hash && Hashing.generateshastring(__arglist(number2)) is var umb1rqf2hash&& umber1hash == stringhash1  && umb1rqf2hash == stringhash2)
+            {
+                reshltstring.Add(Hashing.generateshastring(__arglist(number1 & number2)), number1 & number2);
+                xd = Hashing.generateshastring(__arglist(number1 & number2));
                 return true;
             }
             else if (false)
